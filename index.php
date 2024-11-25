@@ -3,8 +3,8 @@
 
 <head>
   
-    <meta itemprop="name" content="枪毙石坤马" />
-    <meta itemprop="description" content="枪毙石坤马" />
+    <meta itemprop="name" content="枪毙渣男" />
+    <meta itemprop="description" content="枪毙渣男" />
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, width=device-width,target-densitydpi=device-dpi" />
     <link href="./static/index.css" rel="stylesheet" type="text/css">
@@ -28,8 +28,6 @@
             <div id="GameScoreLayer-score" style="margin:10px 0;">得分</div>
             <div id="GameScoreLayer-bast">最佳</div>
             <button type="button" class="btn btn-secondary btn-lg" onclick="replayBtn()">重来</button>
-			<button type="button" class="btn btn-secondary btn-lg" onclick="goRank();">排行</button>
-            
         </div>
     </div>
     </div>
@@ -37,7 +35,7 @@
         <div class="welcome-bg FILL"></div>
         <div class="FILL BOX-M" style="position:absolute;top:0;left:0;right:0;bottom:0;z-index:5;">
             <div style="margin:0 8% 0 9%;">
-                <div style="font-size:2.6em; color:#FEF002;">枪毙石坤马</div><br />
+                <div style="font-size:2.6em; color:#FEF002;">枪毙渣男</div><br />
                 <div id="desc" style="display: block;font-size:2.2em; color:#fff; line-height:1.5em;">
                     从最底下的开始<br />
                     看你20秒多少分<br />
@@ -53,15 +51,10 @@
                         </ul>
                     </div>
                     <br/>
-                    <a class="btn btn-secondary btn-lg" onclick="show_setting()">游戏设置</a>
+                  
                 </div>
                 <div id="setting" style="display: none;">
-                    <div class="container mb-3">
-                        <input type="button" class="btn btn-secondary btn-lg" onclick="getClickBeforeImage()" value="设置点击前的图" style="left: 0">
-                        <input type="file" id="click-before-image" accept="image/*" style="display: none;" onchange="saveClickBeforeImage()">
-                        <input type="button" class="btn btn-secondary btn-lg" onclick="getClickAfterImage()" value="设置点击后的图" style="right: 0">
-                        <input type="file" id="click-after-image" accept="image/*" style="display: none;" onchange="saveClickAfterImage()">
-                    </div>
+                    
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">标题</span>
@@ -74,20 +67,7 @@
                         </div>
                         <input type="text" id="keyboard" class="form-control" maxlength=4 placeholder="默认为DFJK">
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">名字</span>
-                        </div>
-                        <input type="text" id="username" class="form-control" maxlength=8 placeholder="用于纪录排行(特殊字符会被过滤)">
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">留言</span>
-                        </div>
-                        <input type="text" id="message" class="form-control" maxlength=50 placeholder="禁广告/脏话(本项可不填)">
-                    </div>
-                    <button type="button" class="btn btn-secondary btn-lg" onclick="show_btn();save_cookie();">完成</button>
-                </div>
+                    
             </div>
         </div>
     </div>
